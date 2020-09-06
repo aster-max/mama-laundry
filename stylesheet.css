@@ -1,0 +1,43 @@
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url("full-bloom.png");
+	box-sizing: border-box;
+	-webkit-animation: slide 10s linear infinite;
+}
+
+.header-title {
+	width: 100%;
+	margin: 0;
+}
+
+/*
+.header-title h1 {
+	text-align: left;
+	font-family: Trebuchet MS;
+	font-size: 120px;
+	color: #45A8BA;
+}
+*/
+
+.header-title img {
+	width: 30%;
+	height: auto;
+	opacity: 85%;
+	margin-top: 0px;
+	margin-left: 20px;
+	position: absolute;
+	transition: 0.3s;
+}
+
+.header-title img:hover {
+	transform: scale(1.05);
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0px; }
+}
