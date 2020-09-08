@@ -6,7 +6,6 @@ html, body {
 body {
 	background-image: url("full-bloom.png");
 	box-sizing: border-box;
-	-webkit-animation: slide 10s linear infinite;
 }
 
 /*
@@ -37,12 +36,15 @@ body {
 	transform: scale(1.03);
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
 	/*
 	@-webkit-keyframes slide {
 	    from { background-position: 0 0; }
 	    to { background-position: 0px 0px; }
 	}*/
+	body {
+		-webkit-animation: slide 10s linear infinite;		
+	}
 	@-webkit-keyframes slide {
 	    from { background-position: 0 0; }
 	    to { background-position: -400px 0px; }
