@@ -9,11 +9,6 @@ body {
 }
 
 /*
-.header-title {
-	width: 100%;
-	margin: 0;
-}
-
 .header-title h1 {
 	text-align: left;
 	font-family: Trebuchet MS;
@@ -23,12 +18,11 @@ body {
 */
 
 .header-title img {
-	width: 30%;
+	max-width: 30%;
 	height: auto;
 	opacity: 75%;
 	margin-top: 0.8em;
 	margin-left: 0.8em;
-	position: absolute;
 	transition: 0.3s;
 }
 
@@ -37,11 +31,6 @@ body {
 }
 
 @media only screen and (min-width: 768px) {
-	/*
-	@-webkit-keyframes slide {
-	    from { background-position: 0 0; }
-	    to { background-position: 0px 0px; }
-	}*/
 	body {
 		-webkit-animation: slide 10s linear infinite;		
 	}
