@@ -1,0 +1,21 @@
+:root {
+	color: #289E92;
+	font-family: Ubuntu, sans-serif;
+	font-size: 20px;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+}
+
+p {
+	margin-top: -1em;
+	font-size: 1.5em;
+}
+
+p, h1 {
+	text-align: center;	
+	margin-left: auto;
+	margin-right: auto;
+}
