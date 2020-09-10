@@ -1,0 +1,117 @@
+:root {
+	font-family: Trebuchet MS;
+	font-size: 3vw;
+	color: #576F90;
+}
+
+main {
+	margin-left: 2rem;
+	margin-top: 2rem;
+	padding: 1rem;
+}
+
+html, body {
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	background-image: url("full-bloom.png");
+	display: flex;
+	flex-direction: column;
+	transition: 0.3s;	
+}
+
+.nav-bar {
+	width: 2rem;
+	height: 100vh;
+	position: fixed;
+	background: rgba(46, 105, 78, 0.5);	
+	transition: 0.3s;
+}
+
+.nav-bar:hover {
+	width: 7rem;
+	transition: 0.3s;
+}
+
+.nav-bar:hover .link-text {
+	transition: 1s;
+	opacity: 90%;
+}
+
+.nav-bar-nav {
+	list-style: none;
+	padding: 0;
+	margin: 0.30rem;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.nav-item:first-child {
+	margin-top: 0.5em;
+}
+
+.nav-item {
+	min-width: auto;
+	width: 80%;
+	height: auto;
+	opacity: 100%;		
+	margin-top: 1.2em;
+	white-space: nowrap;
+	display: inline-flex;	
+}
+
+.nav-link {
+	text-decoration: none;
+	display: flex;
+	filter: grayscale(100%) opacity(0.7);
+}
+
+.link-text {
+	margin-top: 0.25rem;
+	margin-left: 0.9rem;
+	font-size: 0.5rem;
+	opacity: 0%;
+	text-align: right;
+}
+
+.fa-primary {
+	color: #3E5169;
+}
+
+.header-title img {
+	min-width: auto;
+	max-width: 30%;
+	height: auto;
+	opacity: 75%;
+	display: block;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	transition: 0.3s;
+}
+
+.body-scenery img {
+	min-width: auto;
+	max-width: 100%;
+	height: auto;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.header-title img:hover {
+	transform: scale(1.03);
+}
+
+@media only screen and (min-width: 768px) {
+	body {
+		-webkit-animation: slide 10s linear infinite;		
+	}
+	@-webkit-keyframes slide {
+	    from { background-position: 0 0; }
+	    to { background-position: -400px 0px; }
+	}
+}
