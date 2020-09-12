@@ -3,43 +3,58 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
-	<link rel="stylesheet" type="text/css" href="css/mama-stylesheet.css">
-	<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">
+	<link rel="stylesheet" type="text/css" href="progate-stylesheet.css">
+	<!--<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">-->
+	<link href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css" rel="stylesheet"  type='text/css'>		
+	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,500&display=swap">	
 	<link rel="icon" href="image/mama-laundry.ico">	
-	<title>Mama Laundry | Home</title>
+	<script type="text/javascript" src="js/smartsupp-livechat.js"></script>	
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+	<title>Dashboard - Mama Laundry</title>		
 </head>
 <body>
-	<div class="header-title">
-		<a href="#"><img src="image/logo.png"></a> 
-	</div>
-	<nav class="nav-bar">
-		<ul class="nav-bar-nav">
-			<li class="nav-item">
-				<a href="#" class="nav-link">
-					<i class="fas fa-shopping-basket"></i>					
-					<span class="link-text">Check&nbspOrder</span>
-				</a>			
-			</li>			
-			<li class="nav-item">
-				<a href="#" class="nav-link">
-					<i class="fas fa-bug"></i>
-					<span class="link-text">Report&nbspBug</span>
-				</a>			
-			</li>
-			<li class="nav-item">
-				<a href="#" class="nav-link">
-					<i class="fas fa-comment-dots"></i>							
-					<span class="link-text">Ask&nbspMe</span>
-				</a>			
-			</li>
+	<div class="nav-sidebar">
+		<ul>
+			<li><a class="nav-item" href="#"><i class="fas fa-user"></i></a></li>						
+			<li><a class="nav-item" href="#"><i class="fas fa-tasks"></i></a></li>
+			<li><a class="nav-item" href="#"><i class="fas fa-tag"></i></a></li>
+			<li><a class="nav-item" href="#"><i class="fas fa-balance-scale"></i></a></li>
+			<li><a class="nav-item" href="#"><i class="fas fa-calendar-alt"></i></a></li>						
+			<li><a class="nav-item" href="#"><i class="fas fa-chart-pie"></i></a></li>			
+			<li><a class="nav-item" href="#"><i class="fas fa-bug"></i></a></li>			
+			<li><a class="nav-item" href="#"></a></li>			
+			<li><a class="nav-item" href="#"></a></li>						
 		</ul>
-	</nav>
+	</div>	
+	<div class="head-title">
+		<a href="#"><img src="image/logo-bordered.png"></a> 
+	</div>
+	<div class="main-content">
+	</div>
+	<div class="error-splash">
+		<h1>\_( ~.~ )_/</h1>
+		<h5>
+			mobile view are still in maintenances.
+			<br>please consider to use <a href="https://support.gpsgate.com/hc/en-us/articles/360021934034-Change-to-desktop-mode-on-your-mobile-browser">desktop view</a>
+			<br>for more convenient
+		</h5>
+	</div>
+	<div class="bottom-title">
+		<footer>
+			copyright © 2020 Mama Laundry, Inc. or it's affiliates. All rights reserved.<br>
+			<a href="#">help</a> | 
+			<a href="#">feedback</a> | 
+			<a href="#">terms of use</a> | 
+			<a href="#">privacy</a> | 			 
+			<a href="https://github.com/hotpotcookie/mama-laundry">github</a>
+		</footer>
+	</div>
 </body>
 </html>
 
 <!--
 
-LIST NAVBAR
+LIST ITEM NAV-SIDEBAR
 o pesanan (shopping-cart)
 o harga (tags)
 o kalkulator (calculator)
@@ -48,7 +63,7 @@ o realtime-chat (comment-dots)
 o bantuan (help)
 o bug (bug)
 
-FOOTER
+STICKY FOOTER
 o github (github)
 o instagram (instagram)
 o facebook 
