@@ -1,0 +1,158 @@
+:root {
+	color: #289E92;
+	font-family: Ubuntu, sans-serif;
+	font-size: 20px;
+}
+
+html, body {
+	padding: 0;
+	margin: 0;
+	height: auto;
+	width: auto;
+}
+
+body {
+	background-image: url(../image/memphis-colorful.png);	
+	display: flex;
+	flex-direction: column;
+	margin-left: 0.9em;
+	margin-right: 0.9em;
+	-webkit-animation: slide 10s linear infinite;			
+}
+
+body::-webkit-scrollbar {
+	width: 0.25rem;
+}
+
+body::-webkit-scrollbar-track {
+	background: #FFFFFF
+}
+
+body::-webkit-scrollbar-thumb {
+	background: #226564;
+}
+
+.error-splash {
+	display: none;
+}
+
+.head-title p {
+	margin-top: -1em;
+	font-size: 1.5em;
+}
+
+.head-title {
+	text-align: center;	
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 5em;
+	padding-right: 5em;
+}
+
+.head-title img {
+	min-width: auto;
+	max-width: 80%;
+	opacity: 0.7;
+	display: block;
+	margin-top: 2em;
+	margin-left: auto;
+	margin-right: auto;
+	transition: 0.3s;
+}
+
+.head-title img:hover {
+	opacity: 0.8;
+	transform: scale(1.03);
+}
+
+.nav-sidebar {
+	background: linear-gradient(to right, rgba(31,126,63,0.6), rgba(50,123,112,0.7));	
+	float: left;
+	width: 2.5em;
+	height: auto;
+	margin-top: 1em;
+	overflow: hidden;
+	position: fixed;
+	border-radius: 17px;		
+}
+
+.nav-sidebar li {
+	list-style: none;	
+	margin-left: -2rem;
+	align-items: center;
+	margin-bottom: 0.8rem;
+}
+
+.nav-sidebar li:last-child {
+	margin-bottom: -0.8rem;
+}
+
+.nav-sidebar li:first-child {
+	margin-top: 0.7rem;
+}
+
+.nav-sidebar ul {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+	align-items: center;
+	display: flex;
+	flex-direction: column;
+}
+
+.nav-item {
+	text-decoration: none;	
+}
+
+.nav-item i {
+	color: #2C4A51;
+	opacity: 0.89;
+	display: block;
+	transition: 0.4s all;
+	width: 100%;
+	font-size: 1.5em;
+}
+
+.nav-item i:hover {
+	color: #FFFFFF;
+	transition: 0.4s all;
+	cursor: pointer;	
+}
+
+@-webkit-keyframes slide {
+    from { background-position: 0 0; }
+    to { background-position: -400px 0px; }
+}
+
+@media only screen and (max-width: 800px) {
+	@-webkit-keyframes slide {
+	    from { background-position: 0 0; }
+	    to { background-position: 0px 0px; }
+	}
+	.head-title, .nav-sidebar {	
+		display: none;		
+	}
+	.error-splash {
+		display: block;
+		margin-bottom: auto;
+		margin-top: 3em;
+		margin-left: auto;
+		margin-right: auto;
+		transition: 0.3s;
+		font-size: 1.1em;
+		text-align: center;
+		text-justify: inter-word;
+		opacity: 0.9;		
+	}	
+	.error-splash h1 {
+		text-align: center;
+	}
+
+	.error-splash a {
+		text-decoration: none;
+		color: #5D85CF;
+	}
+
+	body {
+		background-image: url(image/light-grey-terrazzo.png);
+	}
+}
