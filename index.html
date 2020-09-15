@@ -5,11 +5,13 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="progate-stylesheet.css">
 <!--<link rel="stylesheet" href="node_modules/@fortawesome/fontawesome-free/css/all.css">-->
-	<link rel="stylesheet"  type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">		
+	<link rel="stylesheet" type='text/css' href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.css">		
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:ital,wght@0,400;0,500;1,500&display=swap">	
 	<link rel="icon" href="image/mama-laundry.ico">	
-	<script type="text/javascript" src="js/smartsupp-livechat.js"></script>	
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>	
+	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
+	<script type="text/javascript" src="js/smartsupp-livechat.js"></script>	
+	<script type="text/javascript" src="js/notification-handler.js"></script>			
 	<title>Dashboard - Mama Laundry</title>		
 </head>
 <body>
@@ -21,16 +23,20 @@
 			<li><a class="nav-item" href="#"><i class="fas fa-balance-scale"></i></a></li>
 			<li><a class="nav-item" href="#"><i class="fas fa-calendar-alt"></i></a></li>						
 			<li><a class="nav-item" href="#"><i class="fas fa-chart-pie"></i></a></li>			
-			<li><a class="nav-item" href="#"><i class="fas fa-bug"></i></a></li>			
-			<li><a class="nav-item" href="#"></a></li>			
-			<li><a class="nav-item" href="#"></a></li>						
+			<li class="open-btn"><a class="nav-item"><i class="fas fa-bug"></i></a></li>			
 		</ul>
 	</div>	
-	<div class="head-title">
-		<a href="#"><img src="image/logo-bordered.png"></a> 
+	<div class="notification hide">
+		<ul>
+			<li class="notif-bar">
+				<span class="sym-notif"><i class="fas fa-check-circle"></i></span>
+				<span class="msg-notif">&nbspSuccess: your issue have been reported!&nbsp&nbsp</span>
+				<span class="close-notif"><i class="fas fa-times"></i></span>			
+			</li>
+		</ul>
 	</div>
-	<div class="main-content">
-	</div>
+	<div class="head-title"><a href="#"><img src="image/logo-bordered-2.png"></a></div>
+	<div class="main-content"></div>
 	<div class="error-splash">
 		<h1>\_( ~.~ )_/</h1>
 		<h5>
