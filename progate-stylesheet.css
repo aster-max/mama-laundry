@@ -76,6 +76,7 @@ body::-webkit-scrollbar-thumb {
 	overflow: hidden;
 	position: fixed;
 	border-radius: 17px;		
+	box-shadow: 0 0.2em 0.6em rgba(0,0,0,0.3);	
 }
 
 .nav-sidebar li {
@@ -132,6 +133,7 @@ body::-webkit-scrollbar-thumb {
 	overflow: hidden;
 	opacity: 0;
 	pointer-events: none;
+	box-shadow: 0 0.2em 0.6em rgba(0,0,0,0.3);		
 }
 
 .notification li {
@@ -155,10 +157,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .notification.show {
-	animation: show_slide 1s ease forwards;
+	animation: show_slide_notif 1s ease forwards;
 }
 
-@keyframes show_slide {
+@keyframes show_slide_notif {
 	0% {
 		transform: translate(100%);
 	}
@@ -171,10 +173,10 @@ body::-webkit-scrollbar-thumb {
 }
 
 .notification.hide {
-	animation: hide_slide 1s ease forwards;	
+	animation: hide_slide_notif 1s ease forwards;	
 }
 
-@keyframes hide_slide {
+@keyframes hide_slide_notif {
 	0% {
 		transform: translate(0%);
 	}
@@ -183,6 +185,104 @@ body::-webkit-scrollbar-thumb {
 	}
 	100% {
 		transform: translateX(150%);
+	}
+}
+
+.report-sidebar {
+	background: linear-gradient(to right, rgba(24,79,192,0.5), rgba(60,56,191,0.4));	
+	width: 3em;
+	height: auto;
+	margin-top: 1em;
+	margin-left: 4.9em;
+	margin-right: 0.9em;	
+	overflow: hidden;
+	position: fixed;
+	border-radius: 17px;	
+	box-shadow: 0 0.2em 0.6em rgba(0,0,0,0.3);
+	box-sizing: border-box;
+	padding: 1em 14.3em 1em 1em;
+	opacity: 0;
+	pointer-events: none;	
+}
+
+.report-sidebar input, textarea {
+	width: 20em;
+	height: auto;
+	padding: auto;
+	padding-left: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	box-sizing: border-box;
+	outline: none;
+	border: 1px solid rgba(24,79,192,0.5);
+	background: rgba(255,255,255,0.75);
+	border-radius: 6px;
+	font-family: Ubuntu, sans-serif;
+	color: #416E8A;
+}
+
+::placeholder {
+	color: #A5A0A0;
+}
+
+.report-sidebar textarea {
+	resize: none;
+	height: 16.5em;
+	padding: 0.2em 0em 0em 0.5em;
+}
+
+.report-sidebar .submit {
+	cursor: pointer;
+	box-shadow: 0 0.2em 0.6em rgba(0,0,0,0.3);	
+	background: rgb(207,255,201,0.6);
+}
+
+.report-sidebar.show-popup {
+	opacity: 1;
+	pointer-events: auto;
+}
+
+.report-sidebar.show {
+	animation: show_slide_report 1s ease forwards;
+	pointer-events: auto;	
+}
+
+@keyframes show_slide_report {
+	0% {
+		transform: translate(-25%);
+		opacity: 0.3;
+	}
+	50% {
+		transform: translateX(10%);
+		opacity: 0.7;		
+	}
+	100% {
+		transform: translateX(0%);
+		opacity: 1;		
+	}
+}
+
+.report-sidebar.hide {
+	animation: hide_slide_report 1s ease forwards;	
+	display: none;
+}
+
+@keyframes hide_slide_report {
+	0% {
+		transform: translate(0%);
+		opacity: 1;
+	}
+	30% {
+		transform: translateX(10%);
+		opacity: 0.7;		
+	}
+	100% {
+		transform: translateX(-12.5%);
+		opacity: 0.3;		
+	}
+	100% {
+		transform: translateX(-25%);
+		opacity: 0;
 	}
 }
 
