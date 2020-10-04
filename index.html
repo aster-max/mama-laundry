@@ -12,6 +12,7 @@
 	<script src="https://code.jquery.com/jquery-3.5.1.js"></script>
 	<script type="text/javascript" src="js/smartsupp-livechat.js"></script>	
 	<script type="text/javascript" src="js/notification-handler.js"></script>			
+	<script type="text/javascript" src="js/bug-report-handler.js"></script>				
 	<title>Dashboard - Mama Laundry</title>		
 </head>
 <body>
@@ -37,11 +38,12 @@
 	</div>
 	<div class="head-title"><a href="#"><img src="image/logo-bordered-2.png"></a></div>
 	<div class="report-sidebar hide">
-		<form>
-			<input type="text" name="" placeholder="nickname" spellcheck="false">
-			<input type="email" name="" placeholder="email address" spellcheck="false">
-			<textarea placeholder="write your issue here . . ." spellcheck="false"></textarea>
-			<input class="submit" type="submit" name="" value="submit">
+		<form action="report_connection.php" method="post">
+			<input class="nickname" type="text" name="name" placeholder="nickname" spellcheck="false" required>
+			<input class="email" type="email" name="email" placeholder="email address" spellcheck="false" required>
+			<textarea class="area" name="issue" placeholder="write your issue here . . ." spellcheck="false" required maxlength="6000"></textarea>
+			<button class="submit" type="button" name="submit" type="submit">REPORT</button>
+			<input type="submit" name="">
 		</form>
 	</div>		
 	<div class="main-content"></div>

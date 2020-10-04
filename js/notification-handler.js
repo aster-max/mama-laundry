@@ -41,10 +41,6 @@ $(document).ready(function(){
 	//	$('.report-sidebar').addClass("show");
 	//	$('.report-sidebar').addClass("show-popup");					
 
-		setTimeout(function(){
-			$('.notification').addClass("hide");
-			$('.notification').removeClass("show");	
-		},5000)	
 	});
 
 	$('.notification .notif-bar .close-notif').click(function(){
@@ -54,27 +50,6 @@ $(document).ready(function(){
 
 	$('.nav-sidebar .open-btn .nav-item .fa-bug').click(function(){
 		$('.nav-sidebar .open-btn .nav-item .fa-bug').css('color','#FFE2E3');
-	});
-
-	$('.report-sidebar .submit').click(function(){
-		$('.report-sidebar').toggleClass('show hide')
-		$('.report-sidebar.hide').css('display','block');				
-		$('.nav-sidebar').find('.open-btn i').toggleClass("fa-bug fa-times");		
-		$('.nav-sidebar .open-btn .nav-item .fa-bug').css('color','#FFFFFF');		
-
-		$('.notification').toggleClass("hide show")
-		$('.notification').addClass("show-popup");	
-
-	//	success
-		$('.notification').find('.notif-bar .msg-notif').text("Success: your current issue have been reported!");
-		$('.notification').find('.notif-bar .msg-notif').prepend('&nbsp;')		
-		$('.notification').find('.notif-bar .msg-notif').append('&nbsp;')
-		$('.notification').css('background','rgba(54,179,122,0.7)');
-		$('.notification').find('.notif-bar .sym-notif i').addClass("fas fa-check-circle")
-		$('.notification').find('.notif-bar .close-notif').css('background','rgba(54,179,122,0.9)');		
-
-		$('.report-sidebar').find('input, textarea').val('');
-		$('.report-sidebar').find('.submit').val('submit');
 	});
 
 	$('.nav-sidebar .open-btn .nav-item .fa-bug').hover(function(){

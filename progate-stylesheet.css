@@ -52,13 +52,15 @@ body::-webkit-scrollbar-thumb {
 
 .head-title img {
 	min-width: auto;
-	max-width: 70%;
+	max-width: 60%;
 	opacity: 0.7;
 	display: block;
-	margin-top: 2em;
+	margin-top: 5em;
 	margin-left: auto;
-	margin-right: auto;
+	margin-right: auto;	
 	transition: 0.3s;
+	padding-left: 1em;
+	padding-right: 1em;
 }
 
 .head-title img:hover {
@@ -71,8 +73,8 @@ body::-webkit-scrollbar-thumb {
 	width: 3em;
 	height: auto;
 	margin-top: 1em;
-	margin-left: 0.9em;
-	margin-right: 0.9em;	
+	margin-left: 1em;
+	margin-right: 1em;	
 	overflow: hidden;
 	position: fixed;
 	border-radius: 17px;		
@@ -200,12 +202,12 @@ body::-webkit-scrollbar-thumb {
 	border-radius: 17px;	
 	box-shadow: 0 0.2em 0.6em rgba(0,0,0,0.3);
 	box-sizing: border-box;
-	padding: 1em 14.3em 1em 1em;
+	padding: 0.5em 14.3em 0.5em 1em;
 	opacity: 0;
 	pointer-events: none;	
 }
 
-.report-sidebar input, textarea {
+.report-sidebar .nickname, .email, .area, button {
 	width: 20em;
 	height: auto;
 	padding: auto;
@@ -215,7 +217,7 @@ body::-webkit-scrollbar-thumb {
 	box-sizing: border-box;
 	outline: none;
 	border: 1px solid rgba(24,79,192,0.5);
-	background: rgba(255,255,255,0.75);
+	background: rgb(255,255,255,0.75);
 	border-radius: 6px;
 	font-family: Ubuntu, sans-serif;
 	color: #416E8A;
@@ -227,14 +229,24 @@ body::-webkit-scrollbar-thumb {
 
 .report-sidebar textarea {
 	resize: none;
-	height: 16.5em;
+	height: 16.2em;
 	padding: 0.2em 0em 0em 0.5em;
+	font-size: 0.669em;
+	margin-bottom: 0em;
 }
 
 .report-sidebar .submit {
 	cursor: pointer;
 	box-shadow: 0 0.2em 0.6em rgba(0,0,0,0.3);	
-	background: rgb(207,255,201,0.6);
+	background: linear-gradient(to right, rgb(45,179,166,0.9),rgb(81,196,173,0.9));		
+	padding: 1em 0em 1em 1em;
+	margin-top: 0.5em;
+	margin-bottom: 0.65em;
+	border: none;
+	text-decoration: none;
+	letter-spacing: 0.3em;
+	color: white;
+	transition: 0.3s;
 }
 
 .report-sidebar.show-popup {
@@ -317,7 +329,7 @@ body::-webkit-scrollbar-thumb {
 	    from { background-position: 0 0; }
 	    to { background-position: 0px 0px; }
 	}
-	.head-title, .nav-sidebar {	
+	.head-title, .nav-sidebar, .report-sidebar {	
 		display: none;		
 	}
 	.error-splash {
